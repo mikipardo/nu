@@ -1,0 +1,24 @@
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+section#counter-stats {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.stats {
+  text-align: center;
+  font-size: 25px;
+      width: 100%;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stats .fa {
+  color: #127600;
+  font-size: 40px;
+
+}
+
+/*/ end count stats /*/

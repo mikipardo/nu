@@ -1,0 +1,54 @@
+
+<main>
+	<div class="container">
+		<div class="grid product">
+			<div class="column-xs-12 column-md-7">
+				<div class="product-gallery">
+					<div class="product-image" id="idCampoDetalle" valorImg="{{id}}" >
+						<object id="obejoDetalle" class="imgSize active"
+							data="subidas/{{id}}.jpg">
+							<img id="detalleImgMain" src="imagenes/standard.jpg" class="imgSize active"
+								alt="sq-sample4" />
+						</object>
+					</div>
+					<ul class="image-list">
+						<li class="image-item"><a id="producto1" href="#"> <object
+									class="imgSize noActive"
+									data="subidas/{{id}}.jpg">
+									<img src="imagenes/standard.jpg" class="imgSize noActive"
+										alt="sq-sample4" />
+								</object>
+						</a></li>
+						<li class="image-item"><a id="producto2" href="#"><object class="imgSize noActive"
+								data="subidas/{{id}}B.jpg">
+								<img src="imagenes/standard.jpg" class="imgSize noActive"
+									alt="sq-sample4" />
+							</object></a></li>
+						<li class="image-item"><a id="producto3" href="#"><object class="imgSize noActive"
+								data="subidas/{{id}}X.jpg">
+								<img src="imagenes/standard.jpg" class="imgSize noActive"
+									alt="sq-sample4" />
+							</object></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="column-xs-12 column-md-5">
+				{{#.}}
+				<h2>{{modelo}}</h2>
+				<h4>{{categoria.nombre}}</h4>
+				<h2>{{precio}}€</h2>
+				
+				<div class="description">
+					<p>Las característcas de este producto se basan en un acabado y estilo que nos distingue de la competencia, todo
+					ello elaborado con materiales reciclados.</p>
+					<p>Este modelo ({{modelo}}) presenta un color {{color}} la talla disponible es la {{talla}} y su precio
+					es el indicado en la parte superior.</p>
+				</div>
+				<a href="#" id_producto="{{id}}"  class="enlace_comprar add-to-cart">Comprar producto</a>
+				{{/.}}
+			</div>
+		</div>
+		</div>
+</main>
+<div id="recomendador"></div>
+<script type="text/javascript" src="javascript/specialEffects.js"></script>

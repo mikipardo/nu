@@ -1,0 +1,81 @@
+
+<h1 class="hCentrado">Realizar Pedido</h1>
+<div class="container" id="carritoVacio">
+	<div class="row align-items-center">
+		<img style="width: 50rem;"
+			src="https://www.pngkey.com/png/detail/411-4119504_el-carrito-de-la-compra-est-vaco-shopping.png"
+			alt="El Carrito De La Compra Está Vacío - Shopping Cart@pngkey.com">
+		<h3>El Carrito De La Compra Está Vacío - Tienda_Online Cart</h3>
+	</div>
+</div>
+
+<div id="listaCarrito" class="pb-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+
+				<!-- Shopping cart table -->
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col" class="border-0 bg-light">
+									<div class="p-2 px-3 text-uppercase">Productos</div>
+								</th>
+								<th scope="col" class="border-0 bg-light">
+									<div class="py-2 text-uppercase">Precio</div>
+								</th>
+								<th scope="col" class="border-0 bg-light">
+									<div class="py-2 text-uppercase">Cantidad</div>
+								</th>
+								<th scope="col" class="border-0 bg-light">
+									<div class="py-2 text-uppercase">Eliminar</div>
+								</th>
+							</tr>
+						</thead>
+						{{#.}}
+						<tbody>
+							<tr>
+								<th scope="row" class="border-0">
+									<div class="p-2">
+										<object width="70" 
+											data="subidas/{{camiseta_id}}.jpg">
+											<img src="imagenes/standard.jpg" width="70"
+												class="img-fluid rounded shadow-sm" alt="sq-sample4" />
+										</object>
+										<div class="ml-3 d-inline-block align-middle">
+											<h5 class="mb-0">
+												<a href="#" class="text-dark d-inline-block align-middle">Modelo:
+													{{modelo}} </a>
+											</h5>
+											<span
+												class="text-muted font-weight-normal font-italic d-block">{{color}}
+												[{{talla}}] </span>
+										</div>
+									</div>
+								</th>
+						<td class="border-0 align-middle"><strong>{{precio}}
+										eu.</strong></td>
+								<td class="border-0 align-middle"><strong> <input
+										type="number" idCantidad="{{camiseta_id}}" class="input_cantidad"
+										id="inputProducto-cantidad-{{camiseta_id}}" value="{{cantidad}}" min="1" /></strong></td>
+								<td class="border-0 align-middle"><a href="#"
+									class="enlace_borrar_producto text-dark" class="fa fa-trash"
+									id-producto="{{camiseta_id}}" id="enlace_borrar_producto-{{camiseta_id}}"> borrar producto </a> <a href="#"
+									class=""><i></i></a></td>
+							</tr>
+						</tbody>
+						{{/.}}
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="text-align: center; margin: 30px; font-size: 1.5em;">
+	<a href="#" class="btn btn-success" id="realizar_pedido">REALIZAR
+		PEDIDO</a>
+
+</div>
+

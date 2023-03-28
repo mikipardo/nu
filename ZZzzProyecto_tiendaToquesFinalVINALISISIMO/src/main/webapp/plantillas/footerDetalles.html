@@ -1,0 +1,20 @@
+
+<div class="grid related-products">
+
+	<div class="column-xs-12">
+		<h3>Encuentra otros productos relacionados:</h3>
+	</div>
+ {{#.}}
+	<div class="column-xs-12 column-md-4">
+		<a href="#" class="enlace_detalles" id_detalle="{{id}}"> <object 
+				class="imgSizeOpc noActive" data="subidas/{{id}}.jpg">
+				<img src="imagenes/standard.jpg" class="imgSizeOpc noActive"
+					alt="sq-sample4" />
+			</object>
+		</a>
+		<h4>{{modelo}}</h4>
+		<p class="price">{{precio}}€</p>
+	</div>
+{{/.}}
+
+</div>

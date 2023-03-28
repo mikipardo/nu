@@ -1,0 +1,54 @@
+
+
+
+	<article>
+  <h1>Rigel & co. <br /> <span>(Made by <a href="http://mikipardo.byethost7.com/?i=1" target="_blank">Miki Pardo</a>, for <a href="https://www.centronelson.org/">Nelson</a>)</span></h1>
+</article>
+<div style="margin: 10px">
+	total resultados: <span id="total_Camisetas"></span>
+</div>
+
+<div class="album py-5 bg-light auto">
+	<div class="container">
+		<div class="row">
+			{{#.}}
+			<figure class="snip1268 row col-md-4">
+				<div class="image">
+					<object  data="subidas/{{id}}.jpg?fai={{fechaImagenPortada}}">
+						<img src="imagenes/standard.jpg" alt="sq-sample4" />
+					</object>
+
+					<div class="icons">
+						<a href="#" class="enlace_detalles" id_detalle="{{id}}"> <i
+							class="fa fa-search"></i></a>
+					</div>
+					<a href="#" id_producto="{{id}}" class="enlace_comprar add-to-cart">Comprar
+						Producto</a>
+				</div>
+				<figcaption>
+					<h2>{{modelo}}</h2>
+				
+					<p>{{descripcion}}</p>
+						<div class="form-outline form-white">
+			
+						<input type="number" id="input-cantidad-{{id}}"
+							class="form-control" placeholder="1.Uds" min="1" value="1"  style="width: 25%" /> 
+								<p class="price">€{{precio}}</p>
+					</div>
+				
+				</figcaption>
+			</figure>
+			{{/.}}
+
+		</div>
+	</div>
+</div>
+
+<script>
+	/* Demo purposes only */
+	$(".hover").mouseleave(function() {
+		$(this).removeClass("hover");
+	});
+</script>
+
+
